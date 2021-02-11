@@ -9,29 +9,44 @@ body {
 
 
 .grid {
+  display: grid;
+  width: 900px;
+  height: 3000px;
+  margin: auto;
+  grid-template: repeat(30, 1fr) / repeat(12, 1fr);
 
+}
+img {
+  max-width: 100%;
+}
+
+.e, .f,  .h, .i, .k, .l, .n, .o {
+  display: none;
 }
 
 /* set 1: repurposed living */
 .a {
+  grid-area: 1 / 3 / 5/ 13;
 
 }
 
 .b {
-
+ grid-area: 3 / 2 / 4/ 14;
 }
 
 .c {
-
+ grid-area: 4 / 1 / 5/ 4;
 }
 
 /* set 2: angles */
 
 .d {
+   grid-area: 5 / 1 / 12 / 7;
 
 }
 
 .e {
+
 
 }
 
@@ -42,7 +57,7 @@ body {
 /* set 3: pattern play */
 
 .g {
-
+  grid-area: 11 / 3 / 16 / 13;
 }
 
 .h {
